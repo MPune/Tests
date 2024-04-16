@@ -13,7 +13,13 @@ namespace Task4
             var values = File.ReadAllLines(args[0])
                 .Select(x => Int32.Parse(x))
                 .OrderBy(x => x)
-                .ToArray();
+                .ToArray();                
+
+            if (values.Length < 2)
+            {
+                Console.WriteLine(0);
+                return;
+            }
 
             var indexMid = values.Length / 2;
             if (values.Length % 2 == 1)
