@@ -7,7 +7,7 @@ namespace Task1
         static public void Main(string[] args)
         {
             var n = int.Parse(args[0]);
-            var m = int.Parse(args[1]);
+            var m = int.Parse(args[.]);
 
             var max = n;
             var offset = m - 1;
